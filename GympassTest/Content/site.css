@@ -1,0 +1,80 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.jumbotron {
+    background: linear-gradient( rgba(12, 1, 1, 0.75), rgba(12, 1, 1, 0.75) ), url(Imagens/f1_banner.jpg) no-repeat 10% 65%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    color: white;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#classificacao {
+    font-family: 'Exo 2', sans-serif;
+}
+.posicao {
+    font-size: 1.5em;
+    margin: 5px 0px;
+    padding: 10px 0px;
+    height: 56px;
+}
+.posicao:nth-child(even) {
+    background-color: rgb(235, 235, 235);
+}
+.pos {
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    height: 36px;
+    background-color: #cfcfcf;
+    transform: skewX(-20deg);
+    border-right: 5px solid #69d00e;
+    float: left;
+    margin-right: 10px;
+}
+.pos > span {
+    display: block;
+    margin: 7px 0px;
+    font-size: 0.7em;
+    font-weight: 900;
+    color: white;
+    transform: skewX(20deg) !important;
+}
+
+.cartao {
+    position: absolute;
+    width: 90%;
+    margin: 1%;
+    padding: 20px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.cartao .conteudo-cartao {
+    font-size: 1.5em;
+}

@@ -1,0 +1,16 @@
+﻿<div class="jumbotron">
+    <h1>GYMPASS</h1>
+    <p class="lead">Teste para processo de seleção de Desenvolvedor Back End</p>
+    <p>Faça upload do arquivo para acionar os cálculos do sistema</p>
+    @using (Html.BeginForm("Submit",
+                        "Home",
+                        FormMethod.Post,
+                        new { enctype = "multipart/form-data" }))
+    {
+        <input type="file" name="file" id="file" /><br><br>
+        <input type="submit" value="Upload" class="btn btn-primary btn-lg" />
+    }
+</div>
+<div id="classificacao" class="row">
+
+</div>
